@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tailwind Tastes</title>
+
+    <!-- google font cdn -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- fontawesome cdn -->
+
+    <script src="https://kit.fontawesome.com/33b495cb79.js" crossorigin="anonymous"></script>
+
+    <!-- tailwind css cdn -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
 </head>
+
 <body>
-    
+
+    <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
+        <!-- Head section -->
+        <section class="mt-8 md:mt-16 gap-16 md:gap-0 flex flex-col md:flex-row">
+            <!-- text div -->
+            <div>
+                <h1 class="text-4xl lg:text-7xl mb-7">It's good <br>
+                    tea time at The <br>
+                    Tea House
+                </h1>
+                <p class="text-gray-500 w-3/4 mb-7">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                <button class="bg-gradient-to-r from-orange-500 to-red-500 px-4 py-2 rounded-md">Explore More <i class="fa-solid fa-arrow-right -rotate-45"></i></button>
+            </div>
+            <!-- img container -->
+            <div class="relative">
+                <!-- img div -->
+                <div>
+                    <img class="w-full" src="images/banner.png" alt="">
+                </div>
+                <!-- card div -->
+                 <div class="absolute rounded-lg flex items-center bg-white shadow-lg p-2 md:p-4 top-36 left-5 md:top-60 md:left-32 lg:left-28 lg:top-80">
+
+                    <i class="fa-solid fa-star text-amber-500 text-xl lg:text-2xl"></i>
+                    <div class="ml-2 md:ml-3">
+                        <h3 class="text-xl lg:text-2xl font-bold">5.00</h3>
+                        <p class="text-gray-500">Trust Pilot Ratings</p>
+                    </div>
+                 </div>
+            </div>
+
+        </section>
+    </main>
+
 </body>
+
 </html>
